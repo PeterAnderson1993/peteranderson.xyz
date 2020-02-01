@@ -562,6 +562,9 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 		<a href="https://www.linkedin.com/in/peteranderson1993/" target="_blank" style="color:white; text-decoration:none;">
 			<i class="fab fa-linkedin"></i>
 		</a>
+		<a href="https://github.com/PeteDawg5000/peteranderson.x10host.com" target="_blank" style="color:white; text-decoration:none;">
+			<i class="fab fa-github"></i>
+		</a>
 		</p>
 		<p><?php echo $last_modified_date_home; ?></p>
 	</div>
