@@ -3,10 +3,10 @@
 //echo "Last accessed on: " . date("d-m-y", fileatime('index.html'));
  
 $last_modified_date_home = "Last modified on: " . date("jS F Y", filemtime('index.php'));
-$last_modified_date_calc = date("jS F Y", filemtime('projects/Calculator/App/Default.html'));
+$last_modified_date_calc = date("jS F Y", filemtime('projects/calculator/Default.html'));
 $last_modified_date_apitest = date("jS F Y", filemtime('projects/api_test/AllThree.html'));
-$last_modified_date_hangman = date("jS F Y", filemtime('projects/Hangman/App/Hangman.html'));
-$last_modified_date_random = date("jS F Y", filemtime('projects/RandomNumberGenerator/App/RanNumGen.html'));
+$last_modified_date_hangman = date("jS F Y", filemtime('projects/hangman/Hangman.html'));
+$last_modified_date_random = date("jS F Y", filemtime('projects/random_number_generator/RanNumGen.html'));
 
 ?>
 
@@ -423,7 +423,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/RandomNumberGene
 								</div>
 							  </div>
 						  
-							<a href="projects/Hangman/App/Hangman.html" target="_blank" class="btn btn-primary">Live Demo</a>
+							<a href="projects\hangman\Hangman.html" target="_blank" class="btn btn-primary">Live Demo</a>
 						  </div>
 						</div>
 					</div>
@@ -471,7 +471,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/RandomNumberGene
 								</div>
 							  </div>
 						  
-							<a href="projects/RandomNumberGenerator/App/RanNumGen.html" target="_blank" class="btn btn-primary">Live Demo</a>
+							<a href="projects\random_number_generator\RanNumGen.html" target="_blank" class="btn btn-primary">Live Demo</a>
 						  </div>
 						</div>
 					</div>
@@ -522,7 +522,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/RandomNumberGene
 								</div>
 							  </div>
 						  
-							<a href="projects/Calculator/App/Default.html" target="_blank" class="btn btn-primary">Live Demo</a>
+							<a href="projects\calculator\Default.html" target="_blank" class="btn btn-primary">Live Demo</a>
 						  </div>
 						</div>
 					</div>
