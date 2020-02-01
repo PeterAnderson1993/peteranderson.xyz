@@ -1,0 +1,80 @@
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+		<title>Hangman</title>
+	</head>
+
+	<body id="body">
+		
+			<h1 id="title">Hangman!</h1>
+			<p id="test">test</p> <button id="btntest" onClick="checkVisibleLetters()">test</button>
+			
+		<div id="menu">
+			<p>
+			To Start a game, type a word (in secret!) in to the text box for 
+			someone else to try to guess.<br>
+			Then click "Start Game".
+			</p>
+
+				<label for"UserWord">Secret Word:</label>
+				<input type="text" id="UserWord" name="UserWord">
+				<br ><br>
+				<button type="button" onClick="getWord()">Start Game</button>
+				<br><br>
+				<button type="button" onClick="getRandomWord()">Start Single Player Game</button>
+				<br><br>
+		</div>
+		
+		<div id="GameWord"></div>
+		
+			<h1 id="Lives">Lives: </h1> <button type="button" id="btnEndGame" onClick="EndGame()">End Game</button>
+		<div id="game">
+			<canvas id="HangingMan" width="400" height="400" class="w100pc"></canvas>
+			
+			<!-- <input type="text" name="LetterGuess" value="A"
+       selectBoxOptions="A;B;C;D;E;F;G;H;I;J;K;L;M;O;P;Q;R;S;T;U;V;W;X;Y;Z;"> --> 
+			
+			
+		
+			<img id="YouWinImg" src="images/YouWin.jpg" alt="YouWin.jpg">
+			<img id="GameOverImg" src="images/GameOver.jpg" alt="GameOver.jpg">
+			
+			<div id="letters" style="margin:0px 50px;">
+				<button id="btnA" class="letterButton" onClick="A()">A</button>
+				<button id="btnB" class="letterButton" onClick="B()">B</button>
+				<button id="btnC" class="letterButton" onClick="C()">C</button>
+				<button id="btnD" class="letterButton" onClick="D()">D</button>
+				<button id="btnE" class="letterButton" onClick="E()">E</button>
+				<button id="btnF" class="letterButton" onClick="F()">F</button>
+				<button id="btnG" class="letterButton" onClick="G()">G</button>
+				<button id="btnH" class="letterButton" onClick="H()">H</button>
+				<button id="btnI" class="letterButton" onClick="I()">I</button>
+				<button id="btnJ" class="letterButton" onClick="J()">J</button>
+				<button id="btnK" class="letterButton" onClick="K()">K</button>
+				<button id="btnL" class="letterButton" onClick="L()">L</button>
+				<button id="btnM" class="letterButton" onClick="M()">M</button>
+				<button id="btnN" class="letterButton" onClick="N()">N</button>
+				<button id="btnO" class="letterButton" onClick="O()">O</button>
+				<button id="btnP" class="letterButton" onClick="P()">P</button>
+				<button id="btnQ" class="letterButton" onClick="Q()">Q</button>
+				<button id="btnR" class="letterButton" onClick="R()">R</button>
+				<button id="btnS" class="letterButton" onClick="S()">S</button>
+				<button id="btnT" class="letterButton" onClick="T()">T</button>
+				<button id="btnU" class="letterButton" onClick="U()">U</button>
+				<button id="btnV" class="letterButton" onClick="V()">V</button>
+				<button id="btnW" class="letterButton" onClick="W()">W</button>
+				<button id="btnX" class="letterButton" onClick="X()">X</button>
+				<button id="btnY" class="letterButton" onClick="Y()">Y</button>
+				<button id="btnZ" class="letterButton" onClick="Z()">Z</button>
+			</div>
+		</div>
+		
+		<script src="JavaScript/Script.js"></script>
+
+	</body>        
+
+
+</html>

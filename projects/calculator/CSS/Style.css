@@ -1,0 +1,72 @@
+﻿body 
+{
+    color:green;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Calculation
+{
+    color:blue;
+    font-size: 12px;
+    text-align:right;
+    margin-right: 40px;
+    border: none;
+}
+
+form
+{
+    margin: 0 auto;
+    width: 250px;
+    text-align:center;
+    border: 2px solid black;
+    padding-bottom: 30px;
+	
+}
+
+input
+{
+    font-size: 24px;
+    text-align: right;
+}
+
+#input1
+{
+	width: 95%;
+}
+
+button
+{
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border: 2px solid red;
+    box-shadow: 0 4px #999;
+    border-radius: 15px;
+    padding: 10px 15px;
+    width: 50px;
+    text-align:center;
+}
+
+#btnAction
+{
+    background-color: blue;
+    border-color: blue;
+}
+
+#btnEquals
+{
+    background-color: Green;
+    border: 2px solid green;
+}
+
+button:hover
+{
+    box-shadow: 0 4px #999;
+}
+
+button:active
+{
+    transform: translateY(1.5px);
+}

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="jquery-3.4.1.min.js"></script>
+<script>
+
+var tvAPI = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.themoviedb.org/3/tv/top_rated?page=1&language=en-US&api_key=d0aea524bd07ed49cbc26dff63f357dd",
+  "method": "GET",
+  "headers": {},
+  "data": "{}"
+}
+
+$.ajax(tvAPI).done(function (response) {
+  console.log(response);
+  
+  var top_tv = response.results;
+  <!-- alert(top_tv[19].name); -->
+  
+  var text = "";
+  var i;
+  for (i = 0; i < top_tv.length; i++) {
+  text += "<a href='tv.html?tvNo=" + i + "' id='tv"+ i + "'>"  + top_tv[i].name + "</a><br/>";
+}
+
+document.getElementById("tv").innerHTML = text;
+
+var tvNo = getUrlVars()["tvNo"];
+
+$(document).ready(function() {
+	
+	if (tvNo == 0) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[0].name)
+		$('#release_date').text("First Air Date: " + top_tv[18].first_air_date)
+		$('#overview').text(top_tv[0].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 1) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[1].name)
+		$('#release_date').text("First Air Date: " + top_tv[18].first_air_date)
+		$('#overview').text(top_tv[1].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 2) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[2].name)
+		$('#release_date').text("First Air Date: " + top_tv[18].first_air_date)
+		$('#overview').text(top_tv[2].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 3) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[3].name)
+		$('#release_date').text("First Air Date: " + top_tv[18].first_air_date)
+		$('#overview').text(top_tv[3].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 4) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[4].name)
+		$('#release_date').text("First Air Date: " + top_tv[18].first_air_date)
+		$('#overview').text(top_tv[4].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 5) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[5].name)
+		$('#release_date').text("First Air Date: " +top_tv[5].first_air_date)
+		$('#overview').text(top_tv[5].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 6) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[6].name)
+		$('#release_date').text("First Air Date: " +top_tv[6].first_air_date)
+		$('#overview').text(top_tv[6].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 7) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[7].name)
+		$('#release_date').text("First Air Date: " +top_tv[7].first_air_date)
+		$('#overview').text(top_tv[7].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 8) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[8].name)
+		$('#release_date').text("First Air Date: " +top_tv[8].first_air_date)
+		$('#overview').text(top_tv[8].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 9) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[9].name)
+		$('#release_date').text("First Air Date: " +top_tv[9].first_air_date)
+		$('#overview').text(top_tv[9].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 10) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[10].name)
+		$('#release_date').text("First Air Date: " +top_tv[10].first_air_date)
+		$('#overview').text(top_tv[10].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 11) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[11].name)
+		$('#release_date').text("First Air Date: " +top_tv[11].first_air_date)
+		$('#overview').text(top_tv[11].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 12) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[12].name)
+		$('#release_date').text("First Air Date: " +top_tv[12].first_air_date)
+		$('#overview').text(top_tv[12].overview)
+	} 
+	
+});
+
+
+$(document).ready(function() {
+	
+	if (tvNo == 13) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[13].name)
+		$('#release_date').text("First Air Date: " +top_tv[13].first_air_date)
+		$('#overview').text(top_tv[13].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 14) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[14].name)
+		$('#release_date').text("First Air Date: " +top_tv[14].first_air_date)
+		$('#overview').text(top_tv[14].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 15) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[15].name)
+		$('#release_date').text("First Air Date: " +top_tv[15].first_air_date)
+		$('#overview').text(top_tv[15].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 16) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[16].name)
+		$('#release_date').text("First Air Date: " +top_tv[16].first_air_date)
+		$('#overview').text(top_tv[16].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 17) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[17].name)
+		$('#release_date').text("First Air Date: " + top_tv[17].first_air_date)
+		$('#overview').text(top_tv[17].overview)
+	} 
+	
+});
+
+
+$(document).ready(function() {
+	
+	if (tvNo == 18) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[18].name)
+		$('#release_date').text("First Air Date: " + top_tv[18].first_air_date)
+		$('#overview').text(top_tv[18].overview)
+	} 
+	
+});
+
+$(document).ready(function() {
+	
+	if (tvNo == 19) {
+		$('#myModal').show();
+		$('#ModalHeader').text(top_tv[19].name)
+		$('#release_date').text("First Air Date: " + top_tv[19].first_air_date)
+		$('#overview').text(top_tv[19].overview)
+	} 
+	
+});
+});
+
+
+// Read a page's GET URL variables and return them as an associative array.
+function getUrlVars()
+{
+    var vars = [], hash;
+    var hashes = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');
+    for(var i = 0; i < hashes.length; i++)
+    {
+        hash = hashes[i].split('=');
+        vars.push(hash[0]);
+        vars[hash[0]] = hash[1];
+    }
+    return vars;
+}
+
+
+
+</script>
+
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #e642f5;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+a{
+	color:white;
+	font-size:20px;
+	line-height: 30px;
+	text-decoration: none;
+}
+
+a:hover{
+	color:yellow;
+}
+
+</style>
+</head>
+<body>
+
+<a href="movies.html" style="color:black; font-size:12px; text-decoration:underline;">Top Rated Movies</a>
+|
+<a href="tv.html" style="color:black; font-size:12px; text-decoration:underline;">Top Rated TV Shows</a>
+|
+<a href="people.html" style="color:black; font-size:12px; text-decoration:underline;">Top Rated People</a>
+
+<h2>Top Rated TV Shows</h2>
+
+<!-- Trigger/Open The Modal -->
+<!-- <button id="myBtn">Open Modal</button> -->
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2 id="ModalHeader"></h2>
+    </div>
+    <div class="modal-body">
+      <p id="release_date"></p>
+      <p id="overview" ></p>
+    </div>
+    <!-- <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div> -->
+  </div>
+
+</div>
+
+<!-- <p id="test"></p> -->
+<div style="background-color:black;">
+<p id="movies"></p>
+
+
+<p id="tv"></p>
+
+<p id="people"></p>
+
+</div>
+
+<script>
+
+
+
+
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+
+
+</body>
+</html>

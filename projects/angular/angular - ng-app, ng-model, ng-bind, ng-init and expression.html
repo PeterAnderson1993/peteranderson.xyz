@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<!-- Popper JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+		<!-- Angular -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+
+	<body style="padding:20px">
+	
+		<div data-ng-app="" data-ng-init="firstname='Peter'">
+			<p>Name: <input type="text" ng-model="name"></p>
+			<p ng-bind="name"></p>
+		
+			<p>The name is <span ng-bind="firstname"></span></p>
+
+			<p>My first expression: {{ 5 + 5 }}</p>
+			
+			<p>{{name}}</p>
+		</div>
+		
+		<div ng-app="myApp" ng-controller="myCtrl">
+			First name: <input type="text" ng-model="firstname1"><br>
+			Last name: <input type="text" ng-model="lastname1"><br>
+			<br>
+			full name: {{firstname1 + " " + lastname1}}
+
+		</div>
+		
+		<script>
+			var app = angular.module('myApp',[]);
+			app.controller('myCtrl', function($scope){
+				$scope.firstname1= "Jack";
+				$scope.lastname1= "hammer";
+			});
+		
+		</script>
+		
+		
+	
+	</body>
+
+</html>

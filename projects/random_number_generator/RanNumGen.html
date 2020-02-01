@@ -1,0 +1,108 @@
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="CSS/RanNumGen.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+</head>
+
+<body>
+
+<script>
+
+
+		function Max(input) {
+			if (input.value < 0) input.value = 0;
+			if (input.value > 1000000) input.value = 1000000;
+		  }
+
+	function RanNumGen(min, max) {
+		return Math.floor(Math.random() * (max - min)) + min;
+
+	}
+
+	function DisplayRanNum(){
+
+		var min = parseInt(document.getElementById('min').value);
+		var max = parseInt(document.getElementById('max').value);
+
+		var RanNum = RanNumGen(min,max + 1);
+		
+		if(min > max)
+		{
+			alert("Lower number must be lower than the Higher Number!");
+			document.getElementById('Number').innerHTML = "";
+		}
+		else
+		{
+			document.getElementById('Number').innerHTML = RanNum;
+		}
+		
+	}
+	
+	function reset(){
+	
+		document.getElementById('min').value = "0";
+		document.getElementById('max').value = "0";
+		document.getElementById('Number').innerHTML = "0";
+	
+	}
+	
+	function LowerMax(){
+		document.getElementById('min').value = "1000000";
+	}
+	
+	function HigherMax(){
+		document.getElementById('max').value = "1000000";
+	}
+
+	
+
+</script>
+
+	<div>
+
+		<h1 id="title">Random Number Generator</h1>
+		<p id="intro">Generate a random number upto a maximum of 1,000,000.<br><br>
+		Numbers that are generated include the lower number and the higher number.</p>
+	</div>
+
+	<div id="between">
+
+		<div id="MinForm" class="MinAndMax">
+		
+			<label for="min">Inbetween (Lower Number)</label><br> 
+			<input type="number" id="min" name="min" onchange="Max(this)" value="0";>
+			<button onclick="LowerMax()">Max</button>
+			
+		</div>
+		
+
+		<div id="MaxForm" class="MinAndMax">
+		
+			<label for="max">And (higher Number)</label><br> 
+			<input type="number" id="max" name="max" onchange="Max(this)" value="0";>
+			<button onclick="HigherMax()">Max</button>
+			
+			<br>
+			<br>
+			
+			<button onclick="reset()">Reset</button>
+			
+			<button onclick="DisplayRanNum()">Generate</button>
+			
+			
+			
+		</div>	
+		
+	</div>
+
+	<div id="NumberDiv">
+	
+		<h1 id="Number"></h1>
+		
+	</div>
+
+</body>
+	
+</html>

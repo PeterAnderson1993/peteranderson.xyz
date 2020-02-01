@@ -1,0 +1,45 @@
+html{
+	background-image: url("../images/MilkyWay.jpg");
+	color: white;
+}
+
+div{
+	/* border: 2px solid white; */
+}
+
+#between{
+	max-width: 300px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.MinAndMax{
+	max-width: 300px;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+#NumberDiv{
+	font-size: 75px;
+	line-height: 0;
+	width: 100%;
+	margin: auto;
+	text-align: center;
+}
+
+#intro{
+	
+	max-width: 300px
+}
+
+#title{
+	
+}
+
+@media only screen and (max-width: 600px) {
+    #Number {
+        font-size: 50px;
+    }
+}

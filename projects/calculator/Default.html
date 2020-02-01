@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link href="CSS/Style.css" rel="stylesheet" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <script src="JavaScript/MyScript.js"></script>
+
+  
+  <div>
+  
+		<h2 id="">Instuctions</h2>
+		<ul>
+			<li>You can use any number up to 2 decimal places</li>
+			<li>You must hit cancel after pressing the equals sign to start a different calculation. e.g. 2 + 2 = 4 then hit "AC"</li>
+		<ul>
+  
+  </div>
+  
+  
+    <form id="calculator" action="demo_form.asp">
+
+        <p id="demo">Calculator</p>
+        <input id="Calculation">
+        <input id="input1" type="text" step="0.01">
+        <button type="reset" value="Reset">AC</button>
+        <br/><br />
+
+        <button type="button" onclick="no1()">1</button>
+        <button type="button" onclick="no2()">2</button>
+        <button type="button" onclick="no3()">3</button>
+        <button id="btnAction" type="button" onclick="plus()">+</button>  
+        <br /><br />
+        <button type="button" onclick="no4()">4</button>
+        <button type="button" onclick="no5()">5</button>
+        <button type="button" onclick="no6()">6</button>
+        <button id="btnAction" type="button" onclick="minus()">-</button>
+        <br /><br />
+        <button type="button" onclick="no7()">7</button>
+        <button type="button" onclick="no8()">8</button>
+        <button type="button" onclick="no9()">9</button>
+        <button id="btnAction" type="button" onclick="multiply()">x</button>
+        <br /><br />
+        <button type="button" onclick="no0()">0</button>
+		<button type="button" onclick="point()">.</button>
+        <button id="btnEquals" type="button" onclick="equals()">=</button>
+        <button id="btnAction" type="button" onclick="divide()">/</button>
+
+    </form>
+    
+    
+    
+    
+
+  
+
+  
+    
+
+</body>
+</html>
