@@ -332,7 +332,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 						  <p class="card-text"><h6>Languages:</h6><span class="badge badge-success">HTML</span> <span class="badge badge-success">CSS</span> <span class="badge badge-success">JavaScript</span> <span class="badge badge-success">AJAX</span> <span class="badge badge-success">JSON</span></p>
 
 						  <div class="sticky">
-							<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#APIModal">
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#APIModal">
 								Info
 							 </button>
 							  <!-- The Modal -->
@@ -367,6 +367,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 								  </div>
 								</div>
 							  </div>
+							<a href="https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/api_test" target="_blank" class="btn btn-dark">GitHub</a>
 							<a href="projects/api_test/AllThree.html" target="_blank" class="btn btn-primary">Live Demo</a>
 						  </div>
 						</div>
@@ -382,7 +383,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 						  
 						  <div class="sticky">
 							
-							<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#hangmanModal">
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#hangmanModal">
 								Info
 							 </button>
 							  <!-- The Modal -->
@@ -422,7 +423,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 								  </div>
 								</div>
 							  </div>
-						  
+							<a href="https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/hangman" target="_blank" class="btn btn-dark">GitHub</a>
 							<a href="projects\hangman\Hangman.html" target="_blank" class="btn btn-primary">Live Demo</a>
 						  </div>
 						</div>
@@ -438,7 +439,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 						  <br>
 						  <div class="sticky">
 						  
-							<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#randomModal">
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#randomModal">
 								Info
 							 </button>
 							  <!-- The Modal -->
@@ -470,7 +471,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 								  </div>
 								</div>
 							  </div>
-						  
+							<a href="https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/random_number_generator" target="_blank" class="btn btn-dark">GitHub</a>
 							<a href="projects\random_number_generator\RanNumGen.html" target="_blank" class="btn btn-primary">Live Demo</a>
 						  </div>
 						</div>
@@ -490,7 +491,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 						  
 						  <div class="sticky">
 						  
-							<button type="button" class="btn btn-dark" data-toggle="modal" data-target="#calcModal">
+							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#calcModal">
 								Info
 							 </button>
 							  <!-- The Modal -->
@@ -521,7 +522,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 								  </div>
 								</div>
 							  </div>
-						  
+							<a href="https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/calculator" target="_blank" class="btn btn-dark">GitHub</a>
 							<a href="projects\calculator\Default.html" target="_blank" class="btn btn-primary">Live Demo</a>
 						  </div>
 						</div>
