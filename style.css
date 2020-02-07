@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.footer1 {
+   width: 100%;
+   color: white;
+   text-align: center;
+   margin:0;
+}
+
+a.employmentcollapse:hover{
+	color: #0069D9;
+	cursor: pointer;
+}
+.sticky {
+  position: absolute;
+  bottom: 10px;
+} 
+
+.findOutMore{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.heading{
+	padding-top:100px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .findOutMore{ 
+	top: 80%;
+  }
+  .paddingTop10{
+	padding-top:10px;
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+
+	.card-body-height{
+		height: 225px !important;
+	}
+}

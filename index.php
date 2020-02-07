@@ -19,93 +19,12 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 	
 	
-	
-	<style>
-		html {
-		  scroll-behavior: smooth;
-		}
-	
-		.footer1 {
-		   width: 100%;
-		   color: white;
-		   text-align: center;
-		   margin:0;
-		}
-		
-		a.employmentcollapse:hover{
-			color: #0069D9;
-			cursor: pointer;
-		}
-		.sticky {
-		  position: absolute;
-		  bottom: 10px;
-		} 
-		
-		.findOutMore{
-			position: absolute;
-			top: 65%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-		
-		.heading{
-			padding-top:100px;
-		}
-		
-		
-		@media only screen and (max-width: 600px) {
-		  .findOutMore{ 
-			top: 80%;
-		  }
-		  .paddingTop10{
-			padding-top:10px;
-		  }
-		  
-		}
-		
-		@media only screen and (min-width: 768px) and (max-width:1024px) {
-		
-			.card-body-height{
-				height: 225px !important;
-			}
-		}
-	</style>
-	
-	<script>
-	
-		$(document).ready(function(){
-		  $('[data-toggle="popover"]').popover();
-		});
-	
-		var i = 0;
-		var z = 0;
-		var firstLine = "Hello, I'm Peter Anderson.";
-		var secondLine = "I'm an email and web developer.";
-		var speed = 50;
-		
-		
-
-		function typeWriter() {
-		  if (i < firstLine.length) {
-			document.getElementById("demo1").innerHTML += firstLine.charAt(i);
-			i++;
-			setTimeout(typeWriter, speed);
-		  }
-			  setTimeout(function typeWriterSecondLine(){
-				if (z < secondLine.length) {
-				document.getElementById("demo2").innerHTML += secondLine.charAt(z);
-				z++;
-				setTimeout(typeWriter, speed);
-			  }
-			}, 2100);
-		}
-		
-	</script>
 	
 </head>
 
@@ -321,222 +240,9 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 			</p>
 		</div>
 		
-		<div class="container pb-5" style="padding-top:65px;">
-			<div class="row">
-			
-				<div class="col-sm">
-					<div class="card shadow" style="width:100%">
-						<i class="fas fa-film" style="font-size:100px; padding:20px; text-align:center"></i>
-						<div class="card-body card-body-height" style="height:175px">
-						  <h5 class="card-title">API Test</h5>
-						  <p class="card-text"><h6>Languages:</h6><span class="badge badge-success">HTML</span> <span class="badge badge-success">CSS</span> <span class="badge badge-success">JavaScript</span> <span class="badge badge-success">AJAX</span> <span class="badge badge-success">JSON</span></p>
-
-						  <div class="sticky">
-							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#APIModal">
-								Info
-							 </button>
-							  <!-- The Modal -->
-							  <div class="modal" id="APIModal">
-								<div class="modal-dialog">
-								  <div class="modal-content">
-								  
-									<!-- Modal Header -->
-									<div class="modal-header">
-									  <h4 class="modal-title">API Test</h4>
-									  <button type="button" class="close" data-dismiss="modal">&times;</button>
-									</div>
-									
-									<!-- Modal body -->
-									<div class="modal-body">
-										<h6>Description</h6>
-										This sited pulls in Movie, people and TV shows details through API. There are further details for each when you click on a title/name.
-										<br><br>										
-										This was a test for a web developer role.
-										I didn't get the role but I was still quite pleased with my results.
-										<br><br>
-										<h6>Last Updated:</h6> <?php echo $last_modified_date_apitest; ?>
-										<br><br>
-										<h6>Changes Made:</h6> &bull; Added the viewport META tag to make it mobile responsive.
-									</div>
-									
-									<!-- Modal footer -->
-									<div class="modal-footer">
-									  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-									</div>
-
-								  </div>
-								</div>
-							  </div>
-							<a href="https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/api_test" target="_blank" class="btn btn-dark">GitHub</a>
-							<a href="projects/api_test/AllThree.html" target="_blank" class="btn btn-primary">Live Demo</a>
-						  </div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm paddingTop10">
-					<div class="card shadow" style="width:100%">
-						<i class="fas fa-male" style="font-size:100px; padding:20px; text-align:center"></i>
-						<div class="card-body card-body-height" style="height:175px">
-						  <h5 class="card-title">Hangman</h5>
-						  <p class="card-text"><h6>Languages:</h6><span class="badge badge-success">HTML</span> <span class="badge badge-success">CSS</span> <span class="badge badge-success">JavaScript</span></p>
-						  
-						  <div class="sticky">
-							
-							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#hangmanModal">
-								Info
-							 </button>
-							  <!-- The Modal -->
-							  <div class="modal" id="hangmanModal">
-								<div class="modal-dialog">
-								  <div class="modal-content">
-								  
-									<!-- Modal Header -->
-									<div class="modal-header">
-									  <h4 class="modal-title">Hangman</h4>
-									  <button type="button" class="close" data-dismiss="modal">&times;</button>
-									</div>
-									
-									<!-- Modal body -->
-									<div class="modal-body">
-										<h6>Description</h6>
-										I made this game of hangman as a fun project idea to advance my JavaScript skills.
-										<br><br>
-										I first made this game to have one person type the word for someone else to guess. 
-										Later, I used the same code but instead of having to type out a word, an array is made from a few paragraphs copied and pasted from various websites.
-										The paragraphs have been striped of all special characters and then the array is made by seperating each word by a space. 
-										I then took the code from my Randon Number Generator to randomly select a number in the array. 
-										This created a single player game. 
-										<br><br>
-										<h6>Last Updated:</h6> <?php echo $last_modified_date_hangman; ?>
-										<br><br>
-										<h6>Changes Made:</h6> 
-										&bull; Added the viewport META tag to make it mobile responsive.<br>
-										&bull; Added ability to play a single player game.
-									</div>
-									
-									<!-- Modal footer -->
-									<div class="modal-footer">
-									  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-									</div>
-
-								  </div>
-								</div>
-							  </div>
-							<a href="https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/hangman" target="_blank" class="btn btn-dark">GitHub</a>
-							<a href="projects\hangman\Hangman.html" target="_blank" class="btn btn-primary">Live Demo</a>
-						  </div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm paddingTop10">
-					<div class="card shadow" style="width:100%">
-						<i class="fas fa-random" style="font-size:100px; padding:20px; text-align:center"></i>
-						<div class="card-body card-body-height" style="height:175px">
-						  <h5>Random Number Generator</h5>
-						  <p class="card-text"><h6>Languages:</h6><span class="badge badge-success">HTML</span> <span class="badge badge-success">CSS</span> <span class="badge badge-success">JavaScript</span></p>
-						  <br>
-						  <div class="sticky">
-						  
-							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#randomModal">
-								Info
-							 </button>
-							  <!-- The Modal -->
-							  <div class="modal" id="randomModal">
-								<div class="modal-dialog">
-								  <div class="modal-content">
-								  
-									<!-- Modal Header -->
-									<div class="modal-header">
-									  <h4 class="modal-title">Random Number Generator</h4>
-									  <button type="button" class="close" data-dismiss="modal">&times;</button>
-									</div>
-									
-									<!-- Modal body -->
-									<div class="modal-body">
-										<h6>Description</h6> I created this while I was bored. I though that it could have some good game mechanics for future projects. 
-										<br><br>
-										<h6>Last Updated:</h6> <?php echo $last_modified_date_random; ?>
-										<br><br>
-										<h6>Changes Made:</h6> 
-										N/A
-									</div>
-									
-									<!-- Modal footer -->
-									<div class="modal-footer">
-									  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-									</div>
-
-								  </div>
-								</div>
-							  </div>
-							<a href="https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/random_number_generator" target="_blank" class="btn btn-dark">GitHub</a>
-							<a href="projects\random_number_generator\RanNumGen.html" target="_blank" class="btn btn-primary">Live Demo</a>
-						  </div>
-						</div>
-					</div>
-				</div>
-				
-				
-			</div>
-			<div class="row pt-2">
-			
-				<div class="col-sm">
-					<div class="card shadow" style="width:100%">
-						<i class="fas fa-calculator" style="font-size:100px; padding:20px; text-align:center"></i>
-						<div class="card-body card-body-height" style="height:175px">
-						  <h5 class="card-title">Calculator</h5>
-						  <p class="card-text"><h6>Languages:</h6><span class="badge badge-success">HTML</span> <span class="badge badge-success">CSS</span> <span class="badge badge-success">JavaScript</span></p>
-						  
-						  <div class="sticky">
-						  
-							<button type="button" class="btn btn-info" data-toggle="modal" data-target="#calcModal">
-								Info
-							 </button>
-							  <!-- The Modal -->
-							  <div class="modal" id="calcModal">
-								<div class="modal-dialog">
-								  <div class="modal-content">
-								  
-									<!-- Modal Header -->
-									<div class="modal-header">
-									  <h4 class="modal-title">Calculator</h4>
-									  <button type="button" class="close" data-dismiss="modal">&times;</button>
-									</div>
-									
-									<!-- Modal body -->
-									<div class="modal-body">
-										<h6>Description</h6> I created this app while I was at uni just as a side personal project becasue I wanted to test my javaSrcipt skills.
-										<br><br>
-										<h6>Last Updated:</h6> <?php echo $last_modified_date_calc; ?>
-										<br><br>
-										<h6>Changes Made:</h6> &bull; Added the viewport META tag to make it mobile responsive.
-									</div>
-									
-									<!-- Modal footer -->
-									<div class="modal-footer">
-									  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-									</div>
-
-								  </div>
-								</div>
-							  </div>
-							<a href="https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/calculator" target="_blank" class="btn btn-dark">GitHub</a>
-							<a href="projects\calculator\Default.html" target="_blank" class="btn btn-primary">Live Demo</a>
-						  </div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-sm">
-					
-				</div>
-				<div class="col-sm">
-					
-				</div>
-			</div>
-		  
+		<div id="projects_container" class="container pb-5" style="padding-top:65px;">
+			<!-- DO NOT DELETE THIS DIV -->
+			<!-- this div is used by script.js to house the project cards -->	  
 		</div>
 		
 		<div id="contact" class="container heading">
@@ -551,25 +257,28 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 			</div>
 		</div>
 			
-	<div class="footer1 bg-dark p-3">
-	  <h3>Peter Anderson</h3>
-	  <p style="font-size:30px;">
-		<a href="https://www.facebook.com/Peter5000" target="_blank" style="color:white; text-decoration:none;">
-			<i class="fab fa-facebook"></i>
-		</a>
-		<a href="https://www.instagram.com/petera93/?hl=en" target="_blank" style="color:white; text-decoration:none;">
-			<i class="fab fa-instagram"></i>
-		</a>
-		<a href="https://www.linkedin.com/in/peteranderson1993/" target="_blank" style="color:white; text-decoration:none;">
-			<i class="fab fa-linkedin"></i>
-		</a>
-		<a href="https://github.com/PeteDawg5000/peteranderson.x10host.com" target="_blank" style="color:white; text-decoration:none;">
-			<i class="fab fa-github"></i>
-		</a>
-		</p>
-		<p><?php echo $last_modified_date_home; ?></p>
-	</div>
+		<div class="footer1 bg-dark p-3">
+		  <h3>Peter Anderson</h3>
+		  <p style="font-size:30px;">
+			<a href="https://www.facebook.com/Peter5000" target="_blank" style="color:white; text-decoration:none;">
+				<i class="fab fa-facebook"></i>
+			</a>
+			<a href="https://www.instagram.com/petera93/?hl=en" target="_blank" style="color:white; text-decoration:none;">
+				<i class="fab fa-instagram"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/peteranderson1993/" target="_blank" style="color:white; text-decoration:none;">
+				<i class="fab fa-linkedin"></i>
+			</a>
+			<a href="https://github.com/PeteDawg5000/peteranderson.x10host.com" target="_blank" style="color:white; text-decoration:none;">
+				<i class="fab fa-github"></i>
+			</a>
+			</p>
+			<p><?php echo $last_modified_date_home; ?></p>
+		</div>
+	
+	
+	
 	
 </body>
-		
+<script src="script.js"></script>
 </html>
