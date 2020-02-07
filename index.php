@@ -96,13 +96,13 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 		<div class="container pt-3">
 			<span class="badge badge-light">HTML</span>
 			<div class="progress">
-				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%">90%</div>
+				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:95%">95%</div>
 			</div>
 		</div>
 		<div class="container pt-2">
 			<span class="badge badge-light">CSS</span>
 			<div class="progress">
-				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%">90%</div>
+				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:95%">95%</div>
 			</div>
 		</div>
 		<div class="container pt-2">
@@ -114,25 +114,25 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 		<div class="container pt-2">
 			<span class="badge badge-light">JavaScript</span>
 			<div class="progress">
-				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:75%">75%</div>
+				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%">80%</div>
 			</div>
 		</div>
 		<div class="container pt-2">
 			<span class="badge badge-light">JQuery</span>
 			<div class="progress">
-				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:55%">55%</div>
+				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%">60%</div>
 			</div>
 		</div>
 		<div class="container pt-2">
 			<span class="badge badge-light">PHP</span>
 			<div class="progress">
-				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:35%"><span>35%</span></div>
+				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:40%"><span>40%</span></div>
 			</div>
 		</div>
 		<div class="container pt-2">
 			<span class="badge badge-light">Email Development</span>
 			<div class="progress">
-				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%">80%</div>
+				<div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%">90%</div>
 			</div>
 		</div>
 		<div class="container pt-2">
