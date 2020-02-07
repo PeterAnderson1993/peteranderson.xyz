@@ -46,10 +46,10 @@ var projects =
 		"github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/calculator","livedemo":"projects/calculator/Default.html"
 	},
 	{
-		
+		"name":"Football API", "date_started":"Febuary 2020", "date_lastupdated":"Febuary 2020","icon":"fa-futbol", "languages":["HTML","CSS","JavaScript","AJAX","JSON","REST"],"model_id":"football_model","github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/football_api","livedemo":"projects/football_api/index.html"
 	},
 	{
-		
+		"name":"Now TV - Email Interview Task", "date_started":"Febuary 2020", "date_lastupdated":"Febuary 2020","icon":"nowTvIcon", "languages":["HTML","CSS"],"model_id":"nowTV_model","github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/now_tv_email","livedemo":"projects/now_tv_email/interview_task.html"
 	}
 ]
 
@@ -69,6 +69,8 @@ var move_to_new_row = 1;
 console.log(projects[i].languages[1]);
 
 //make a project card
+
+//Not currently using the modals as info can be found on github
  for (i = 0; i < projects.length; i++) {
 	 
 	  

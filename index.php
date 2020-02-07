@@ -82,7 +82,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 		
 		<div class="container pt-5">
 			<div class="d-flex justify-content-center">
-				<img class="rounded-circle" src="images/Photo_of_Pete.png" alt="About" style="width:30%">
+				<img class="rounded-circle" src="images/Photo_of_Pete.png" alt="About" style="width:300px">
 			</div>
 		</div>
 		
@@ -240,7 +240,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 			</p>
 		</div>
 		
-		<div id="projects_container" class="container pb-5" style="padding-top:65px;">
+		<div id="projects_container" class="container pt-5">
 			<!-- DO NOT DELETE THIS DIV -->
 			<!-- this div is used by script.js to house the project cards -->	  
 		</div>

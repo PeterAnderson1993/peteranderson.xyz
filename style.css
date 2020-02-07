@@ -29,6 +29,13 @@ a.employmentcollapse:hover{
 	padding-top:100px;
 }
 
+.nowTvIcon {
+	height:140px;
+	width:250px;
+	margin:0 auto;
+   content:url(projects/now_tv_email/NOW-TV-Logo-Large.jpg);
+}​
+
 
 @media only screen and (max-width: 600px) {
   .findOutMore{ 
