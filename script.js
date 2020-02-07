@@ -53,6 +53,12 @@ var projects =
 	}
 ]
 
+//Sort by "date_started" with projects[0] being the most recent
+projects.sort(function(a, b) {
+    var dateA = new Date(a.date_started), dateB = new Date(b.date_started);
+    return dateB - dateA;
+});
+
 var i;
 var idCode = 0;
 
