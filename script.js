@@ -30,26 +30,26 @@ function typeWriter() {
 var projects = 
 [
 	{
-		"name":"API Test", "date_started":"June 2019", "date_lastupdated":"June 2019","icon":"fa-film", "languages":["HTML","CSS","JavaScript","AJAX","JSON","REST"],"model_id":"api_model",
-		"github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/api_test","livedemo":"projects/api_test/AllThree.html","":""
+		"name":"Brandwidth - API Interview Task", "date_started":"June 2019", "date_lastupdated":"June 2019","icon":"brandwidthIcon", "languages":["HTML","CSS","JavaScript","AJAX","JSON","REST"],"model_id":"api_model",
+		"github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/api_test","livedemo":"projects/api_test/AllThree.html","complete":"y"
 	},
 	{
 		"name":"Hangman", "date_started":"march 2018", "date_lastupdated":"January 2020","icon":"fa-male", "languages":["HTML","CSS","JavaScript"],"model_id":"hangman_model",
-		"github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/hangman","livedemo":"projects/hangman/Hangman.html"
+		"github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/hangman","livedemo":"projects/hangman/Hangman.html","complete":"n"
 	},
 	{
 		"name":"Random Number Generator", "date_started":"June 2017", "date_lastupdated":"June 2017","icon":"fa-random", "languages":["HTML","CSS","JavaScript"],"model_id":"random_model",
-		"github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/random_number_generator","livedemo":"projects/random_number_generator/RanNumGen.html"
+		"github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/random_number_generator","livedemo":"projects/random_number_generator/RanNumGen.html","complete":"y"
 	},
 	{
 		"name":"Calculator", "date_started":"June 2017", "date_lastupdated":"June 2017","icon":"fa-calculator", "languages":["HTML","CSS","JavaScript"],"model_id":"calc_model",
-		"github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/calculator","livedemo":"projects/calculator/Default.html"
+		"github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/calculator","livedemo":"projects/calculator/Default.html","complete":"n"
 	},
 	{
-		"name":"Football API", "date_started":"Febuary 2020", "date_lastupdated":"Febuary 2020","icon":"fa-futbol", "languages":["HTML","CSS","JavaScript","AJAX","JSON","REST"],"model_id":"football_model","github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/football_api","livedemo":"projects/football_api/index.html"
+		"name":"Football API", "date_started":"Febuary 2020", "date_lastupdated":"Febuary 2020","icon":"fa-futbol", "languages":["HTML","CSS","JavaScript","AJAX","JSON","REST"],"model_id":"football_model","github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/football_api","livedemo":"projects/football_api/index.html","complete":"n"
 	},
 	{
-		"name":"Now TV - Email Interview Task", "date_started":"Febuary 2020", "date_lastupdated":"Febuary 2020","icon":"nowTvIcon", "languages":["HTML","CSS"],"model_id":"nowTV_model","github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/now_tv_email","livedemo":"projects/now_tv_email/interview_task.html"
+		"name":"Now TV - Email Interview Task", "date_started":"Febuary 2020", "date_lastupdated":"Febuary 2020","icon":"nowTvIcon", "languages":["HTML","CSS"],"model_id":"nowTV_model","github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/now_tv_email","livedemo":"projects/now_tv_email/interview_task.html","complete":"y"
 	}
 ]
 
@@ -79,7 +79,16 @@ console.log(projects[i].languages[1]);
 //Not currently using the modals as info can be found on github
  for (i = 0; i < projects.length; i++) {
 	 
-	  
+	 var finished;
+	 
+	  if(projects[i].complete == 'y')
+		{
+			finished = "<i class='far fa-check-circle completeIcon'></i>";
+		}
+		else
+		{
+			finished = "<i class='fas fa-user-edit workingIcon'></i>";
+		}
 	
 		project_card = 
 		"\
@@ -88,14 +97,17 @@ console.log(projects[i].languages[1]);
 					<i class='fas " + projects[i].icon + "' style='font-size:100px; padding:20px; text-align:center'></i>\
 					<div class='card-body card-body-height' style='height:175px'>\
 						<h5 class='card-title'>" + projects[i].name + "</h5>\
-						<p class='card-text'>\
+						<div class='card-text pbottom10'>\
 							<h6>Languages:</h6>\
 							<div class='languages_container'></div>\
-						</p>\
-						<div class='sticky'>\
-							<!--<button type='button' class='btn btn-info' data-toggle='modal' data-target='#" + projects[i].model_id + "'>Info</button>&nbsp;-->\
-							<a href='" + projects[i].github + "' target='_blank' class='btn btn-dark'>GitHub</a>&nbsp;\
-							<a href='" + projects[i].livedemo + "' target='_blank' class='btn btn-primary'>Live Demo</a>\
+						</div>\
+						<div class='sticky' style='display:inline; width:93%' >\
+							<div class='d-flex' style='display:inline-block;'>\
+								<!--<button type='button' class='btn btn-info' data-toggle='modal' data-target='#" + projects[i].model_id + "'>Info</button>&nbsp;-->\
+								<div style='display:inline-block;'><a href='" + projects[i].github + "' target='_blank' class='btn btn-dark'>GitHub</a></div>&nbsp;\
+								<div style='display:inline-block;'><a href='" + projects[i].livedemo + "' target='_blank' class='btn btn-primary'>Live Demo</a></div>&nbsp;\
+								<div class='ml-auto' style='display:inline-block;'><span style='vertical-align: -20%;'></span>" + finished + "</div>\
+							</div>\
 						</div>\
 					</div>\
 				</div>\

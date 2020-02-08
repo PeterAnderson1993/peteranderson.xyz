@@ -20,7 +20,7 @@ a.employmentcollapse:hover{
 
 .findOutMore{
 	position: absolute;
-	top: 65%;
+	top: 70%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -31,17 +31,40 @@ a.employmentcollapse:hover{
 
 .nowTvIcon {
 	height:140px;
-	width:250px;
+	width:225px;
 	margin:0 auto;
    content:url(projects/now_tv_email/NOW-TV-Logo-Large.jpg);
-}​
+}
 
 .brandwidthIcon {
 	height:140px;
 	width:250px;
 	margin:0 auto;
-   content:url(projects\api_test\brandwidth-logo.png);
-}​
+   content:url(projects/api_test/Brandwidth-logo-300x105.jpg);
+   background-color:white;
+}
+
+.completeIcon{
+	font-size:30px;
+	vertical-align: -20px;
+	background-color:#28A745;
+	border-radius:50px;
+	padding:0px;
+}
+
+.workingIcon{
+	font-size:25px;
+	vertical-align: middle;
+	background-color:#FFBF00;
+	border-radius:5px;
+	padding:5px;
+	border: solid black 2px;
+	float:right;
+}
+
+.card-body{
+	padding:1rem;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -51,6 +74,7 @@ a.employmentcollapse:hover{
   .paddingTop10{
 	padding-top:10px;
   }
+  .pbottom10
   
 }
 
