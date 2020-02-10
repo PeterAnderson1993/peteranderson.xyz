@@ -20,9 +20,19 @@ a.employmentcollapse:hover{
 
 .findOutMore{
 	position: absolute;
-	top: 65%;
+	top: 60%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	opacity: 0.0;
+	animation-name: fadeIn;
+	animation-duration: 2s;
+	/* animation-iteration-count: infinite; */
+	animation-delay: 6s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn{
+	100% {opacity: 1.0;}
 }
 
 .heading{

@@ -18,8 +18,10 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
@@ -36,7 +38,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 			  <h1 style="text-align:center; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width:">
 			  <code style="color:white;" id="demo1"></code></br><code style="color:white;" id="demo2"></code>
 			  </h1>
-			  <button type="button" class="btn btn-dark findOutMore"><a href="#about" class="text-light">Find out more</a> <i class="fas fa-arrow-down"></i></button>
+			  <a href="#about" class="btn btn-dark findOutMore animated fadeIn"><span  class="text-light">Find out more</span> <i class="fas fa-arrow-down"></i></a>
 			</div>
 			
 		</div>
@@ -82,7 +84,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 		
 		<div class="container pt-5">
 			<div class="d-flex justify-content-center">
-				<img class="rounded-circle" src="images/Photo_of_Pete.png" alt="About" style="width:300px">
+				<img class="rounded-circle" src="images/Photo_of_Pete.png" alt="About" style="width:300px;">
 			</div>
 		</div>
 		
@@ -281,4 +283,5 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 	
 </body>
 <script src="script.js"></script>
+
 </html>
