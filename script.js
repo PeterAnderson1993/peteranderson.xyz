@@ -22,7 +22,7 @@ function typeWriter() {
 		z++;
 		setTimeout(typeWriter, speed);
 	  }
-	}, 2100);
+	}, 1500);
 }
 
 //Projects 
@@ -30,8 +30,7 @@ function typeWriter() {
 var projects = 
 [
 	{
-		"name":"Brandwidth - API Interview Task", "date_started":"June 2019", "date_lastupdated":"June 2019","icon":"brandwidthIcon", "languages":["HTML","CSS","JavaScript","AJAX","JSON","REST"],"model_id":"api_model",
-		"github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/api_test","livedemo":"projects/api_test/AllThree.html","complete":"y"
+		"name":"Brandwidth - API Interview Task", "date_started":"June 2019", "date_lastupdated":"June 2019","icon":"brandwidthIcon", "languages":["HTML","CSS","JavaScript","AJAX","JSON","REST"],"model_id":"api_model","github":"https://github.com/PeteDawg5000/peteranderson.x10host.com/tree/master/projects/api_test","livedemo":"projects/api_test/AllThree.html","complete":"y"
 	},
 	{
 		"name":"Hangman", "date_started":"march 2018", "date_lastupdated":"January 2020","icon":"fa-male", "languages":["HTML","CSS","JavaScript"],"model_id":"hangman_model",
