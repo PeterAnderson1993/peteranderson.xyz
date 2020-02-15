@@ -80,6 +80,7 @@ a.employmentcollapse:hover{
 @media only screen and (max-width: 600px) {
   .findOutMore{ 
 	top: 80%;
+	
   }
   .paddingTop10{
 	padding-top:10px;
