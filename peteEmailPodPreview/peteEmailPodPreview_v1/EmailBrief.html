@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+
+<html style=" background-color: white;">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Email POD Preview</title>
+<script src="HTML_Templates/savedAsJsString/HERO_1-2.js"></script> 
+<script src="HTML_Templates/savedAsJsString/HERO_1-3.js"></script> 
+<script src="HTML_Templates/savedAsJsString/HERO_1-4.js"></script> 
+<script src="HTML_Templates/savedAsJsString/HERO_2-1.js"></script> 
+<script src="HTML_Templates/savedAsJsString/HERO_2-2.js"></script> 
+<script src="HTML_Templates/savedAsJsString/HERO_2-3.js"></script> 
+<script src="HTML_Templates/savedAsJsString/HERO_2-4.js"></script> 
+<script src="HTML_Templates/savedAsJsString/MASTER.js"></script> 
+<script src="HTML_Templates/savedAsJsString/MOD_2-1.js"></script> 
+<script src="HTML_Templates/savedAsJsString/MOD_2-2.js"></script> 
+<script src="HTML_Templates/savedAsJsString/MOD_2-3.js"></script> 
+<script src="HTML_Templates/savedAsJsString/MOD_2-4.js"></script> 
+<script src="HTML_Templates/savedAsJsString/MOD_2-5.js"></script> 
+<script src="HTML_Templates/savedAsJsString/MOD_2-6.js"></script> 
+<script src="HTML_Templates/savedAsJsString/MOD_2-7.js"></script> 
+<script src="HTML_Templates/savedAsJsString/MOD_2-8.js"></script> 
+<script src="HTML_Templates/savedAsJsString/MOD_2-9.js"></script>
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+<style>
+	
+	html, body {
+		min-width: 260px;
+		min-height: 100%;
+		padding: 0;
+		Margin: 0;
+		background: #ffffff;
+<!-- 		font-family: Arial, sans-serif; -->
+		font-size: 16px;
+		line-height: 22px;
+		letter-spacing: 0;
+	}
+</style>
+</head>
+
+<body style="padding:20px; background-color: white;">
+
+<div class=" mt-3">
+  <h2>UK/ROI Email POD Preview & Email Builder</h2>
+  <br>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+   
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">POD Preview</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">Email Builder</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+   
+    <div id="menu1" class=" tab-pane fade">
+		
+		<div style="margin:10px 0 0 0; display:inline-block;">				
+			<form style="vertical-align: top;">
+                <table width="300px; ">
+                    <tbody>
+						<tr>
+							<td>
+								<h2>POD Preview</h2>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<form style="margin: 0 0 10px 0;">
+									<input type="radio" id="mobilePodPreview" name="MobileOrDesktop" value="Mobile" onchange="mobileOrDesktopPodPreview()">
+									<label for="Mobile">Mobile</label>
+									&nbsp;
+									<input type="radio" id="DesktopPodPreview" name="MobileOrDesktop" value="Desktop" onchange="mobileOrDesktopPodPreview()">
+									<label for="Desktop">Desktop</label>
+								</form>
+							</td>
+						</tr>
+                        <tr>
+                            <td style="font-size:20px; line-height:30px;"><h3>Hero Pod</h3></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="hero1" name="mod" value="HERO_1-2" onchange="podPreview(HERO1_2,'hero1')">
+                                <label for="hero1">HERO 1-2</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="hero2" name="mod" value="HERO_1-3" onchange="podPreview(HERO1_3,'hero2')">
+                                <label for="hero2">HERO 1-3</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="hero3" name="mod" value="HERO_1-4" onchange="podPreview(HERO1_4,'hero3')">
+                                <label for="hero3">HERO 1-4</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="hero4" name="mod" value="HERO_2-1" onchange="podPreview(HERO2_1,'hero4')">
+                                <label for="hero4">HERO 2-1</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="hero5" name="mod" value="HERO_2-2" onchange="podPreview(HERO2_2,'hero5')">
+                                <label for="hero5">HERO 2-2</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="hero6" name="mod" value="HERO_2-3" onchange="podPreview(HERO2_3,'hero6')">
+                                <label for="hero6">HERO 2-3</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="hero7" name="mod" value="HERO_2-4" onchange="podPreview(HERO2_4,'hero7')">
+                                <label for="hero7">HERO 2-4</label></td>
+                        </tr>
+                        <tr>
+                            <td style="font-size:20px; line-height:40px;"><h3>Content Pods</h3></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="mod1" name="mod" value="mod_1-2" onchange="podPreview(MOD2_1,'mod1')">
+                                <label for="mod1">MOD 2-1</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="mod2" name="mod" value="mod_1-3" onchange="podPreview(MOD2_2,'mod2')">
+                                <label for="mod2">MOD 2-2</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="mod3" name="mod" value="mod_1-4" onchange="podPreview(MOD2_3,'mod3')">
+                                <label for="mod3">MOD 2-3</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="mod4" name="mod" value="mod_2-1" onchange="podPreview(MOD2_4,'mod4')">
+                                <label for="mod4">MOD 2-4</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="mod5" name="mod" value="mod_2-2" onchange="podPreview(MOD2_5,'mod5')">
+                                <label for="mod5">MOD 2-5</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="mod6" name="mod" value="mod_2-3" onchange="podPreview(MOD2_6,'mod6')">
+                                <label for="mod6">MOD 2-6</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="mod7" name="mod" value="mod_2-4" onchange="podPreview(MOD2_7,'mod7')">
+                                <label for="mod7">MOD 2-7</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="mod8" name="mod" value="mod_2-4" onchange="podPreview(MOD2_8,'mod8')">
+                                <label for="mod8">MOD 2-8</label></td>
+                        </tr>
+                        <tr>
+                            <td><input type="radio" id="mod9" name="mod" value="mod_2-4" onchange="podPreview(MOD2_9,'mod9')">
+                                <label for="mod9">MOD 2-9</label></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+		</div>
+		<div style="display:inline-block; margin:20px 0 0 0px; vertical-align:top;">
+		   
+			<div id="podPreviewWindow" style="width:350px; height:600px; overflow: scroll; border:2px solid black; "></div>
+		</div>
+        
+			
+    </div>
+    <div id="menu2" class=" tab-pane fade" style="padding:20px 0 0 0;">
+		<div style="display:inline-block; vertical-align: top; margin:0 0 0 20px; display:inline-block;">
+		
+			<h2>Email Builder</h2>
+			
+			<form style="margin: 10px 0 10px 0;">
+				<input type="radio" id="mobileEmailPreview" name="MobileOrDesktop" value="Mobile" onchange="mobileOrDesktopEmailPreview()">
+				<label for="Mobile">Mobile</label>
+				&nbsp;
+				<input type="radio" id="DesktopEmailPreview" name="MobileOrDesktop" value="Desktop" onchange="mobileOrDesktopEmailPreview()">
+				<label for="Desktop">Desktop</label>
+			</form>
+		
+                
+                <table>
+					<tr>
+						<td style="vertical-align:top; text-align:right; padding: 0 5px 0 0;">
+							<span>Hero POD:</span>
+						</td>
+						<td style="vertical-align:top;">
+							<select name="heroPods" id="heroDropdown" onchange="addPod(this.value,'addheroPod')" style="margin:0 0 15px 0;">
+								<option value="" disabled="" selected="">Select your Pod</option>
+								<option value="none">None</option>
+								<option value="HERO1_2">HERO 1-2</option>
+								<option value="HERO1_3">HERO 1-3</option>
+								<option value="HERO1_4">HERO 1-4</option>
+								<option value="HERO2_1">HERO 2-1</option>
+								<option value="HERO2_2">HERO 2-2</option>
+								<option value="HERO2_3">HERO 2-3</option>
+								<option value="HERO2_4">HERO 2-4</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td style="vertical-align:top; text-align:right; padding: 0 5px 0 0;">
+							<span>1st POD:</span>
+						</td>
+						<td style="vertical-align:top;">
+							<select name="firstPod" id="firstPodDropdown" onchange="addPod(this.value,'add1stPod')" style="margin:0 0 15px 0;">
+								<option value="" disabled="" selected="">Select your Pod</option>
+								<option value="none">None</option>
+								<option value="MOD2_1">MOD 2-1</option>
+								<option value="MOD2_2">MOD 2-2</option>
+								<option value="MOD2_3">MOD 2-3</option>
+								<option value="MOD2_4">MOD 2-4</option>
+								<option value="MOD2_5">MOD 2-5</option>
+								<option value="MOD2_6">MOD 2-6</option>
+								<option value="MOD2_7">MOD 2-7</option>
+								<option value="MOD2_8">MOD 2-8</option>
+								<option value="MOD2_9">MOD 2-9</option>
+							</select><br>
+						</td>
+					</tr>
+					<tr>
+						<td style="vertical-align:top; text-align:right; padding: 0 5px 0 0;">
+							<span>2nd POD:</span>
+						</td>
+						<td style="vertical-align:top;">
+							<select name="secondPod" id="secondPodDropdown" onchange="addPod(this.value,'add2ndPod')" style="margin:0 0 15px 0;">
+								<option value="" disabled="" selected="">Select your Pod</option>
+								<option value="none">None</option>
+								<option value="MOD2_1">MOD 2-1</option>
+								<option value="MOD2_2">MOD 2-2</option>
+								<option value="MOD2_3">MOD 2-3</option>
+								<option value="MOD2_4">MOD 2-4</option>
+								<option value="MOD2_5">MOD 2-5</option>
+								<option value="MOD2_6">MOD 2-6</option>
+								<option value="MOD2_7">MOD 2-7</option>
+								<option value="MOD2_8">MOD 2-8</option>
+								<option value="MOD2_9">MOD 2-9</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+				<br>
+				File Name:
+                <input type="text" id="filename" style="width:140px">
+				<div id="fnError" style="color:red; visibility: hidden; margin:10px 0 10px 0;">You must give your email a file name.</div>
+                <input type="button" id="dwn-btn" value="Download HTML">
+			</div>
+		<div id="emailPreviewWindow" style="width:350px; height:600px; overflow: scroll; border:2px solid black; display:inline-block;"></div>
+		
+    </div>
+  </div>
+</div>
+
+            
+            
+		
+            
+
+    
+<script>
+
+	// Select all tabs
+	$('.nav-tabs a').click(function(){
+	$(this).tab('show');
+	})
+
+	// Select tab by name
+	$('.nav-tabs a[href="#home"]').tab('show')
+
+	// Select first tab
+	$('.nav-tabs a:first').tab('show')
+
+	// Select last tab
+	$('.nav-tabs a:last').tab('show')
+
+	// Select fourth tab (zero-based)
+	$('.nav-tabs li:eq(3) a').tab('show')
+	
+	var AddMaster = document.getElementById("emailPreviewWindow");
+	AddMaster.innerHTML = MASTER;
+
+	function addPod(what,where){
+        
+        var none = "";
+        document.getElementById(where).innerHTML = eval(what);
+        
+	}
+    
+	function download(filename, text) {
+		var element = document.createElement('a');
+		element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+		element.setAttribute('download', filename);
+
+		element.style.display = 'none';
+		document.body.appendChild(element);
+
+		element.click();
+
+		document.body.removeChild(element);
+	}
+
+	// Start file download.
+	document.getElementById("dwn-btn").addEventListener("click", function(){
+
+        var heroDiv = '<div id="addheroPod">';
+        var heroPodPos = MASTER.search(heroDiv) + heroDiv.length;
+        var createdEmail = [MASTER.slice(0, heroPodPos), eval(document.getElementById("heroDropdown").value), MASTER.slice(heroPodPos)].join('');
+        
+        var firstPodDiv = '<div id="add1stPod">';
+        var firstPodPos = createdEmail.search(firstPodDiv) + firstPodDiv.length;
+        var createdEmail = [createdEmail.slice(0, firstPodPos), eval(document.getElementById("firstPodDropdown").value), createdEmail.slice(firstPodPos)].join('');
+        
+        var secondPodDiv = '<div id="add2ndPod">';
+        var secondPodPos = createdEmail.search(secondPodDiv) + secondPodDiv.length;
+        var createdEmail = [createdEmail.slice(0, secondPodPos), eval(document.getElementById("secondPodDropdown").value), createdEmail.slice(secondPodPos)].join('');
+		
+		var text = createdEmail;
+	
+		var filename = document.getElementById("filename").value + ".html" ;
+        
+        if(document.getElementById("filename").value == ""){
+            
+            document.getElementById("fnError").style.visibility = "visible";
+           }
+        else{
+            document.getElementById("fnError").style.visibility = "hidden";
+            download(filename, createdEmail);
+        }
+
+	}, false);
+	
+    
+    
+    
+    function myFunction(url) {
+      window.open(url, "MsgWindow", "width=350,height=500,left=200");
+    }
+
+
+    function podPreview(podCode,radioID){
+        var podPreviewWindow = document.getElementById("podPreviewWindow");
+
+        if (document.getElementById(radioID).checked) {
+
+                podPreviewWindow.innerHTML = podCode;
+
+            }
+
+    }
+
+    function mobileOrDesktopPodPreview(){
+
+        if(document.getElementById("mobilePodPreview").checked)
+        {
+            document.getElementById("podPreviewWindow").style.width="350px"; 
+            document.getElementById("podPreviewWindow").style.height="600px";
+        }
+        else if(document.getElementById("DesktopPodPreview").checked)
+        {
+            document.getElementById("podPreviewWindow").style.width="600px"; 
+            document.getElementById("podPreviewWindow").style.height="600px";
+        }
+    }
+	
+	function mobileOrDesktopEmailPreview(){
+
+        if(document.getElementById("mobileEmailPreview").checked)
+        {
+            document.getElementById("emailPreviewWindow").style.width="350px"; 
+            document.getElementById("emailPreviewWindow").style.height="600px";
+        }
+        else if(document.getElementById("DesktopEmailPreview").checked)
+        {
+            document.getElementById("emailPreviewWindow").style.width="600px"; 
+            document.getElementById("emailPreviewWindow").style.height="600px";
+        }
+    }
+	
+</script>
+</body>
+</html>

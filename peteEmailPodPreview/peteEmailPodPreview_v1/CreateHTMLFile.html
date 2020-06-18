@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<script type="text/javascript">
+
+	
+
+	function createHTMLFile(){
+		var frame = document.getElementById("theFrame");
+          
+	  var doc = document.implementation.createHTMLDocument("New Document");
+	  var p = doc.createElement("p");
+	  p.innerHTML = "This is a new paragraph.";
+	  
+	  try {
+		doc.body.appendChild(p);
+	  } catch(e) {
+		console.log(e);
+	  }
+
+	  // Copy the new HTML document into the frame
+
+	  var destDocument = frame.contentDocument;
+	  var srcNode = doc.documentElement;
+	  var newNode = destDocument.importNode(srcNode, true);
+	  
+	  destDocument.replaceChild(newNode, destDocument.documentElement);
+ 
+		
+	}
+	
+	function AddPeter(){
+		var iframe = document.getElementById('theFrame');
+		var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+		innerDoc.body.innerHTML += "<p>Peter</p>";
+	}
+	
+	function downloadInnerHtml(filename, elId, mimeType) {
+    var elHtml = document.getElementById(elId).innerHTML;
+    var link = document.createElement('a');
+    mimeType = mimeType || 'text/plain';
+
+    link.setAttribute('download', filename);
+    link.setAttribute('href', 'data:' + mimeType + ';charset=utf-8,' + encodeURIComponent(elHtml));
+    link.click(); 
+}
+
+var fileName =  'tags.html'; // You can use the .txt extension if you want
+downloadInnerHtml(fileName, 'body','text/html');
+	
+</script>
+
+</head>
+<body>
+
+	<input type="button" value="Add Peter" onclick="AddPeter()"/>
+
+	<p id="confirm" style="display:none;">HTML Document created</p>
+<br><br>
+	<iframe id="theFrame" src="about:blank" onload="createHTMLFile()" />
+
+<script>
+	
+	downloadInnerHtml(fileName, 'body','text/html');
+	
+</script>
+
+</body>
+</html>
