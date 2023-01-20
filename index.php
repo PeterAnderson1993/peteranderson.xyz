@@ -11,7 +11,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 ?>
 
 
-
+<!-- new test -->
 
 <html>
 
@@ -31,6 +31,8 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 	
 	
 </head>
+
+
 
 <body id="home" onload="typeWriter()" style="background-color:#F8F9FA">
 		
