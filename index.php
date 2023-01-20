@@ -10,6 +10,8 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 
 ?>
 
+<!-- hello this is to test the git commit in vs code -->
+
 
 <html>
 
