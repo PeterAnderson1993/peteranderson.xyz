@@ -3,95 +3,109 @@ html {
 }
 
 .footer1 {
-   width: 100%;
-   color: white;
-   text-align: center;
-   margin:0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  margin: 0;
 }
 
-a.employmentcollapse:hover{
-	color: #0069D9;
-	cursor: pointer;
+a.employmentcollapse:hover {
+  color: #0069d9;
+  cursor: pointer;
 }
 .sticky {
   position: absolute;
   bottom: 10px;
-} 
-
-.findOutMore{
-	position: absolute;
-	top: 60%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	opacity: 0.0;
-	animation-name: fadeIn;
-	animation-duration: 2s;
-	/* animation-iteration-count: infinite; */
-	animation-delay: 6s;
-	animation-fill-mode: forwards;
 }
 
-@keyframes fadeIn{
-	100% {opacity: 1.0;}
+html {
+  scroll-padding-top: 30px; /* height of sticky header */
 }
 
-.heading{
-	padding-top:100px;
+.findOutMore {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+  /* animation-iteration-count: infinite; */
+  animation-delay: 6s;
+  animation-fill-mode: forwards;
 }
 
-.nowTvIcon {
-	height:140px;
-	width:225px;
-	margin:0 auto;
-   content:url(projects/now_tv_email/NOW-TV-Logo-Large.jpg);
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
 }
 
-.brandwidthIcon {
-	height:140px;
-	width:250px;
-	margin:0 auto;
-   content:url(projects/api_test/Brandwidth-logo-300x105.jpg);
-   background-color:white;
+.heading {
+  padding-top: 25px;
 }
 
-.completeIcon{
-	font-size:30px;
-	vertical-align: -20px;
-	background-color:#28A745;
-	border-radius:50px;
-	padding:0px;
+.completeIcon {
+  font-size: 30px;
+  vertical-align: -20px;
+  background-color: #28a745;
+  border-radius: 50px;
+  padding: 0px;
 }
 
-.workingIcon{
-	font-size:25px;
-	vertical-align: middle;
-	background-color:#FFBF00;
-	border-radius:5px;
-	padding:5px;
-	border: solid black 2px;
-	float:right;
+.workingIcon {
+  font-size: 25px;
+  vertical-align: middle;
+  background-color: #ffbf00;
+  border-radius: 5px;
+  padding: 5px;
+  border: solid black 2px;
+  float: right;
 }
 
-.card-body{
-	padding:1rem;
+.card-body {
+  padding: 1rem;
 }
 
+.navbar {
+  padding: 0 !important;
+}
+
+.project-table {
+  margin-top: 20px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.project-table td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.project-table tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav-link {
+    padding-left: 10px !important;
+  }
+}
 
 @media only screen and (max-width: 600px) {
-  .findOutMore{ 
-	top: 80%;
-	
+  .findOutMore {
+    top: 80%;
   }
-  .paddingTop10{
-	padding-top:10px;
+  .paddingTop10 {
+    padding-top: 10px;
   }
-  .pbottom10
-  
 }
 
-@media only screen and (min-width: 768px) and (max-width:1024px) {
-
-	.card-body-height{
-		height: 225px !important;
-	}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .card-body-height {
+    height: 225px !important;
+  }
 }
