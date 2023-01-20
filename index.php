@@ -10,7 +10,7 @@ $last_modified_date_random = date("jS F Y", filemtime('projects/random_number_ge
 
 ?>
 
-<!-- hey -->
+
 
 
 <html>
