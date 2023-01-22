@@ -1,72 +1,97 @@
-﻿body 
-{
-    color:green;
-    
-    font-family: Arial, Helvetica, sans-serif;
+﻿body {
+  color: white;
+  background-color: #3b4664;
+  font-family: "Bebas Neue", cursive;
 }
 
-#Calculation
-{
-    color:blue;
-    font-size: 12px;
-    text-align:right;
-    margin-right: 40px;
-    border: none;
+* {
+  font-family: "Bebas Neue", cursive;
 }
 
-form
-{
-    margin: 0 auto;
-    width: 250px;
-    text-align:center;
-    border: 2px solid black;
-    padding-bottom: 30px;
-	
+#Calculation {
+  color: white;
+  font-size: 12px;
+  text-align: right;
+  margin-right: 40px;
+  border: none;
+  width: 100%;
+  display: block;
 }
 
-input
-{
-    font-size: 24px;
-    text-align: right;
+form {
+  background-color: #3b4664;
+  margin: 0 auto;
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  padding: 20px;
 }
 
-#input1
-{
-	width: 95%;
+input {
+  font-size: 24px;
+  text-align: right;
+  background-color: transparent;
 }
 
-button
-{
-    background-color: red;
-    color: white;
-    border: none;
-    font-size: 18px;
-    border: 2px solid red;
-    box-shadow: 0 4px #999;
-    border-radius: 15px;
-    padding: 10px 15px;
-    width: 50px;
-    text-align:center;
+#demo {
+  margin-top: 0;
+  text-align: left;
 }
 
-#btnAction
-{
-    background-color: blue;
-    border-color: blue;
+#reset {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #647299;
+  box-shadow: 0 4px #414e71;
+  color: white;
+  border: none;
+  font-size: 18px;
+  border-radius: 6px;
+  padding: 10px 15px;
+  text-align: center;
 }
 
-#btnEquals
-{
-    background-color: Green;
-    border: 2px solid green;
+#input1 {
+  width: 100%;
+  display: block;
+  color: white;
+  border: none;
 }
 
-button:hover
-{
-    box-shadow: 0 4px #999;
+.calcSections {
+  background-color: #181f32;
+  border-radius: 6px;
+  padding: 20px;
 }
 
-button:active
-{
-    transform: translateY(1.5px);
+.buttonSections {
+  margin-top: 20px;
+}
+
+.NonOpbutton {
+  background-color: #eae3db;
+  color: white;
+  border: none;
+  font-size: 18px;
+  color: #878890;
+  box-shadow: 0 4px #aea4a2;
+  border-radius: 6px;
+  padding: 10px 15px;
+  width: 49px;
+  text-align: center;
+}
+
+#btnEquals {
+  background-color: #d13f30;
+  box-shadow: 0 4px #8f2316;
+  color: white;
+}
+
+button:hover {
+  box-shadow: 0 4px #999;
+}
+
+button:active {
+  transform: translateY(1.5px);
 }

@@ -5,13 +5,17 @@
 	<meta charset="utf-8" />
     <link href="CSS/Style.css" rel="stylesheet" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <script src="JavaScript/MyScript.js"></script>
 
   
-  <div>
+  <div style="display:none;">
   
 		<h2 id="">Instuctions</h2>
 		<ul>
@@ -21,45 +25,42 @@
   
   </div>
   
-  
     <form id="calculator" action="demo_form.asp">
 
-        <p id="demo">Calculator</p>
-        <input id="Calculation">
-        <input id="input1" type="text" step="0.01">
-        <button type="reset" value="Reset">AC</button>
-        <br/><br />
+        <p id="demo">Calc</p>
 
-        <button type="button" onclick="no1()">1</button>
-        <button type="button" onclick="no2()">2</button>
-        <button type="button" onclick="no3()">3</button>
-        <button id="btnAction" type="button" onclick="plus()">+</button>  
-        <br /><br />
-        <button type="button" onclick="no4()">4</button>
-        <button type="button" onclick="no5()">5</button>
-        <button type="button" onclick="no6()">6</button>
-        <button id="btnAction" type="button" onclick="minus()">-</button>
-        <br /><br />
-        <button type="button" onclick="no7()">7</button>
-        <button type="button" onclick="no8()">8</button>
-        <button type="button" onclick="no9()">9</button>
-        <button id="btnAction" type="button" onclick="multiply()">x</button>
-        <br /><br />
-        <button type="button" onclick="no0()">0</button>
-		<button type="button" onclick="point()">.</button>
-        <button id="btnEquals" type="button" onclick="equals()">=</button>
-        <button id="btnAction" type="button" onclick="divide()">/</button>
+        <div class="calcSections">
+            <input id="Calculation">
+            <input id="input1" type="text" step="0.01">
+        </div>
+
+        <div class="calcSections buttonSections">
+            <button id="reset" type="reset" value="Reset">RESET</button>
+            <br/><br />
+
+            <button class="NonOpbutton" type="button" onclick="no1()">1</button>
+            <button class="NonOpbutton" type="button" onclick="no2()">2</button>
+            <button class="NonOpbutton" type="button" onclick="no3()">3</button>
+            <button class="NonOpbutton" id="btnAction" type="button" onclick="plus()">+</button>  
+            <br /><br />
+            <button class="NonOpbutton" type="button" onclick="no4()">4</button>
+            <button class="NonOpbutton" type="button" onclick="no5()">5</button>
+            <button class="NonOpbutton" type="button" onclick="no6()">6</button>
+            <button class="NonOpbutton" id="btnAction" type="button" onclick="minus()">-</button>
+            <br /><br />
+            <button class="NonOpbutton" type="button" onclick="no7()">7</button>
+            <button class="NonOpbutton" type="button" onclick="no8()">8</button>
+            <button class="NonOpbutton" type="button" onclick="no9()">9</button>
+            <button class="NonOpbutton" id="btnAction" type="button" onclick="multiply()">x</button>
+            <br /><br />
+            <button class="NonOpbutton" type="button" onclick="no0()">0</button>
+            <button class="NonOpbutton" type="button" onclick="point()">.</button>
+            <button class="NonOpbutton" id="btnEquals" type="button" onclick="equals()">=</button>
+            <button class="NonOpbutton" id="btnAction" type="button" onclick="divide()">/</button>
+
+        </div>
 
     </form>
-    
-    
-    
-    
-
-  
-
-  
-    
 
 </body>
 </html>
