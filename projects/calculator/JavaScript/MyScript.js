@@ -1,12 +1,9 @@
 ﻿var calculation = "";
 
-function displayCalculation() {
-  document.getElementById("sumEquals").innerHTML = calculation;
-}
-
 function addToCalculation(event) {
   calculation += event.target.innerHTML;
   console.log(calculation);
+  document.getElementById("sumEquals").innerHTML = calculation;
 }
 
 function resetConsoleCalc() {
