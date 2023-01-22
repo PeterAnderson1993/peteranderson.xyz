@@ -6,11 +6,20 @@
 
 * {
   font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+}
+
+.mb15 {
+  margin-bottom: 15px;
+}
+
+.w100pc {
+  width: 49%;
 }
 
 #Calculation {
   color: white;
-  font-size: 12px;
+  font-size: 18px;
   text-align: right;
   margin-right: 40px;
   border: none;
@@ -21,7 +30,7 @@
 form {
   background-color: #3b4664;
   margin: 0 auto;
-  width: 250px;
+  max-width: 400px;
   text-align: center;
   border-radius: 10px;
   padding-bottom: 30px;
@@ -34,29 +43,37 @@ input {
   background-color: transparent;
 }
 
-#demo {
-  margin-top: 0;
+#title {
+  margin: 0 0 5px 0;
   text-align: left;
+}
+
+#signature {
+  margin: 0 0 5px 0;
+  text-align: right;
+  font-size: 15px;
 }
 
 #reset {
   width: 100%;
-  margin-top: 10px;
+  margin: 10px 0 15px 0;
   background-color: #647299;
   box-shadow: 0 4px #414e71;
   color: white;
   border: none;
-  font-size: 18px;
   border-radius: 6px;
   padding: 10px 15px;
   text-align: center;
 }
 
-#input1 {
+#sumEquals {
   width: 100%;
   display: block;
   color: white;
   border: none;
+  font-size: 40px;
+  margin: 0;
+  text-align: right;
 }
 
 .calcSections {
@@ -73,13 +90,15 @@ input {
   background-color: #eae3db;
   color: white;
   border: none;
-  font-size: 18px;
-  color: #878890;
+  color: #66666e;
   box-shadow: 0 4px #aea4a2;
   border-radius: 6px;
   padding: 10px 15px;
-  width: 49px;
+  width: 20.34%;
   text-align: center;
+  margin: 5px;
+  font-size: 30px;
+  vertical-align: bottom;
 }
 
 #btnEquals {
