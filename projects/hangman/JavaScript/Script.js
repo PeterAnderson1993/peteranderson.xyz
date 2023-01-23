@@ -90,17 +90,13 @@ function checkVisibleLetters() {
 }
 
 function EndGame() {
-	var con = confirm("Ending the game will cause you lose all progress of this game. Are you sure you want to end this game? ")
-	if (con == true) {
-		gameBoardInvisible()
-		showMenu()
-		resetGameBoard()
-		document.getElementById("Lives").innerHTML = ""
-		Lives = 10
-		var strLives = String(Lives)
-		document.getElementById("Lives").innerHTML = document.getElementById("Lives").innerHTML + "Lives: " + strLives
-	} else {
-	}
+	gameBoardInvisible()
+	showMenu()
+	resetGameBoard()
+	document.getElementById("Lives").innerHTML = ""
+	Lives = 10
+	var strLives = String(Lives)
+	document.getElementById("Lives").innerHTML = document.getElementById("Lives").innerHTML + "Lives: " + strLives
 }
 
 function LivesMinusOne() {
@@ -108,213 +104,13 @@ function LivesMinusOne() {
 }
 
 function gameOver() {
-	document.getElementsByName("A")
-	var x = document.getElementsByName("A")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
+	var AllHiddenLetters = document.getElementsByClassName("GameWordLetterDivHide")
+
+	for (var i = 0; i < AllHiddenLetters.length; i++) {
+		AllHiddenLetters[i].style.visibility = "visible"
 	}
 
-	document.getElementsByName("B")
-	var x = document.getElementsByName("B")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("C")
-	var x = document.getElementsByName("C")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("D")
-	var x = document.getElementsByName("D")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("E")
-	var x = document.getElementsByName("E")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("F")
-	var x = document.getElementsByName("F")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("G")
-	var x = document.getElementsByName("G")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("H")
-	var x = document.getElementsByName("H")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("I")
-	var x = document.getElementsByName("I")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("J")
-	var x = document.getElementsByName("J")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("K")
-	var x = document.getElementsByName("K")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("L")
-	var x = document.getElementsByName("L")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("M")
-	var x = document.getElementsByName("M")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("N")
-	var x = document.getElementsByName("N")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("O")
-	var x = document.getElementsByName("O")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("P")
-	var x = document.getElementsByName("P")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("Q")
-	var x = document.getElementsByName("Q")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("R")
-	var x = document.getElementsByName("R")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("S")
-	var x = document.getElementsByName("S")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("T")
-	var x = document.getElementsByName("T")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("U")
-	var x = document.getElementsByName("U")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("V")
-	var x = document.getElementsByName("V")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("W")
-	var x = document.getElementsByName("W")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("X")
-	var x = document.getElementsByName("X")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("Y")
-	var x = document.getElementsByName("Y")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
-
-	document.getElementsByName("Z")
-	var x = document.getElementsByName("Z")
-	var i
-	for (i = 0; i < x.length; i++) {
-		x[i].classList.remove("GameWordLetterDivHide")
-		x[i].classList.add("GameWordLetterDivShow")
-	}
+	document.getElementById("HangingMan").style.background = "red"
 }
 
 function guessLetter(event) {
@@ -359,9 +155,8 @@ function guessLetter(event) {
 		}
 		if (Lives <= 0) {
 			arms()
-			/* document.getElementById("GameOverImg").style.display = "inline-block"; */
 			document.getElementById("letters").style.display = "none"
-			gameOver()
+			gameOver(event)
 		}
 	}
 
